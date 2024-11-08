@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>冰涼霜淇淋</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <!-- 連結外部css 附檔名必須是.css -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- 導覽列 -->
+    <nav>
+        <ul>
+            <li><a href="#home">首頁</a></li>
+            <li><a href="#news">最新消息</a></li>
+            <li><a href="#products">產品介紹</a></li>
+            <li><a href="#order">立即訂購</a></li>
+        </ul>
+    </nav>
+
+    <!-- 橫幅 -->
+    <section class="hero" id="home">
+        <div data-aos="fade-up">
+            <h1>冰涼霜淇淋</h1>
+            <p>享受最純粹的冰涼滋味</p>
+        </div>
+    </section>
+
+    <!-- 最新消息 -->
+    <section class="news" id="news">
+        <h2 class="section-title" data-aos="fade-up">最新消息</h2>
+        <div class="news-grid">
+            <div class="news-item" data-aos="fade-up" data-aos-delay="100">
+                <h3>夏季新品上市</h3>
+                <p>芒果季節限定，新鮮水果與霜淇淋的完美結合！</p>
+            </div>
+            <div class="news-item" data-aos="fade-up" data-aos-delay="200">
+                <h3>好友分享優惠</h3>
+                <p>與好友一同購買，第二件半價優惠！</p>
+            </div>
+            <div class="news-item" data-aos="fade-up" data-aos-delay="300">
+                <h3>新門市開幕</h3>
+                <p>台北信義區新門市盛大開幕，歡迎蒞臨品嚐！</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 產品介紹 -->
+    <section class="products" id="products">
+        <h2 class="section-title" data-aos="fade-up">產品介紹</h2>
+        <div class="product-grid">
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="/api/placeholder/200/200" alt="香草霜淇淋">
+                <h3>香草霜淇淋</h3>
+                <p>經典不敗的純淨風味</p>
+            </div>
+            <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+                <img src="/api/placeholder/200/200" alt="巧克力霜淇淋">
+                <h3>巧克力霜淇淋</h3>
+                <p>濃郁香醇的巧克力滋味</p>
+            </div>
+            <div class="product-card" data-aos="fade-up" data-aos-delay="300">
+                <img src="/api/placeholder/200/200" alt="草莓霜淇淋">
+                <h3>草莓霜淇淋</h3>
+                <p>新鮮草莓製成的甜蜜滋味</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 訂購頁面 -->
+    <section class="order" id="order">
+        <h2 class="section-title" data-aos="fade-up">立即訂購</h2>
+        <form class="order-form" data-aos="fade-up">
+            <div class="form-group">
+                <label for="name">姓名</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">電話</label>
+                <input type="tel" id="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="flavor">口味選擇</label>
+                <select id="flavor" required>
+                    <option value="">請選擇口味</option>
+                    <option value="vanilla">香草</option>
+                    <option value="chocolate">巧克力</option>
+                    <option value="strawberry">草莓</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="quantity">數量</label>
+                <input type="number" id="quantity" min="1" required>
+            </div>
+            <button type="submit">送出訂單</button>
+        </form>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer>
+        <p>冰涼霜淇淋 © 2024</p>
+        <p>電話：(02) 1234-5678</p>
+        <p>地址：台北市信義區冰淇淋路88號</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>
